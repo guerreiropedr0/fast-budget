@@ -17,6 +17,7 @@
   --primary: #3778c2;
   --secondary: #5fb523;
   --text: #434b54;
+  --light-background: #f5f6f8;
   --font: 'proxima-nova', 'sans-serif';
 }
 
@@ -35,6 +36,7 @@
 
 body {
   color: var(--text);
+  background-color: var(--light-background);
 }
 
 .container {
@@ -49,18 +51,33 @@ body {
   background: linear-gradient(180deg, var(--primary) 0%, var(--primary) 70%, #295990 100%);
 }
 
-.homepage {
+.header {
   align-items: center;
   padding: 1rem;
   color: #fff;
 }
 
 .information {
-  padding: 1rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.border {
+  border: 1px groove rgba(28, 110, 164, 0.11);
+}
+
+.border-y {
+  border-top: 1px groove rgba(28, 110, 164, 0.11);
+  border-bottom: 1px groove rgba(28, 110, 164, 0.11);
 }
 
 .heading {
   margin-bottom: 0.5rem;
+}
+
+.margin-y {
+  margin: 1rem 0 1rem 0;
 }
 
 .margin-b {
@@ -73,4 +90,50 @@ body {
 
 .link:hover {
   text-decoration: underline;
+}
+
+.form {
+  padding: 0 0.5rem 0 0.5rem;
+  background-color: white;
+}
+
+.form-group {
+  flex: auto;
+  display: flex;
+}
+
+.form-control {
+  flex: auto;
+  border: none;
+  padding: 0.8rem;
+  outline: unset;
+}
+
+.form-group:nth-child(odd) {
+  border-top: 1px groove rgba(28, 110, 164, 0.11);
+}
+
+.btn {
+  background: linear-gradient(to bottom, var(--secondary) 5%, #5cbf2a 100%);
+  background-color: var(--secondary);
+  border: 1px solid #18ab29;
+  cursor: pointer;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #2f6627;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #5cbf2a 5%, var(--secondary) 100%);
+  background-color: #5cbf2a;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.align-self-start {
+  align-self: start;
 }

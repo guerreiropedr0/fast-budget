@@ -1,17 +1,18 @@
+<header class="header container primary-gradient-background">
+  <h1>Create Group</h1>
+</header>
 <%= turbo_frame_tag @group do %>
-  <%= form_with model: @group, data: { turbo: false } do |form| %>
+  <%= form_with model: @group, data: { turbo: false }, class: "container form margin-y border-y" do |form| %>
 
-    <div>
-      <%= form.label :name %>
-      <%= form.text_field :name, autofocus: true %>
+    <div class="form-group">
+      <%= form.text_field :name, autofocus: true, placeholder: "Name", class: "form-control " %>
     </div>
 
-    <div>
-      <%= form.label :icon, "Icon link" %>
-      <%= form.text_field :icon %>
+    <div class="form-group">
+      <%= form.text_field :icon, placeholder: "Icon link", class: "form-control" %>
     </div>
 
-    <%= form.submit "Save" %>
+    <%= form.submit "Save", class: "btn align-self-start margin-y" %>
 
   <% end %>
 <% end %>
