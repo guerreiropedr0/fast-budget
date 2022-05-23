@@ -1,24 +1,84 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Fast Budget
 
-Things you may want to cover:
+> Mobile web application where you can manage your budget.
 
-* Ruby version
+You have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-* System dependencies
+## Built With
 
-* Configuration
+- RUBY
+- RAILS
+- GEM
+- TERMINAL
 
-* Database creation
+## Getting Started
 
-* Database initialization
+Start by cloning the repository.
 
-* How to run the test suite
+```
+git clone git@github.com:guerreiropedr0/fast-budget.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Navigate to the created folder.
 
-* Deployment instructions
+```
+cd fast-budget
+```
 
-* ...
+Current Ruby Version for this project
+
+```
+ruby 3.0.3p157 (2021-11-24 revision 3fb7d2cadc) [x86_64-linux]
+```
+
+Install all the dependencies.
+
+```
+bundle install
+npm install
+```
+
+Create and migrate the database
+
+```
+rails db:create
+rails db:migrate
+```
+
+To run the test suits
+
+```
+bundle exec rspec
+```
+
+To run the server
+
+```
+rails s
+```
+
+Link to [localhost](http://localhost:3000/)
+
+## Authors
+
+👤 **Pedro Guerreiro**
+
+- GitHub: [@guerreiropedr0](https://github.com/guerreiropedr0)
+- Twitter: [@guerreiropedr0](https://twitter.com/guerreiropedr0)
+- LinkedIn: [Pedro Guerreiro](https://www.linkedin.com/in/guerreiropedr0/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
