@@ -34,7 +34,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_23_090840) do
 
   create_table "operations", force: :cascade do |t|
     t.string "name", null: false
-    t.integer "amount"
+    t.integer "amount", null: false
     t.bigint "author_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
