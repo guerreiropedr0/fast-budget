@@ -45,6 +45,9 @@ gem 'bootsnap', require: false
 # Rubocop linter
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+# Devise authentication
+gem 'devise'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
