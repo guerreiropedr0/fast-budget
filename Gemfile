@@ -48,6 +48,9 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 # Devise authentication
 gem 'devise'
 
+# CanCanCan authorization
+gem 'cancancan'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
