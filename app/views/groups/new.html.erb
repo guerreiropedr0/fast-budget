@@ -1,0 +1,17 @@
+<%= turbo_frame_tag @group do %>
+  <%= form_with model: @group, data: { turbo: false } do |form| %>
+
+    <div>
+      <%= form.label :name %>
+      <%= form.text_field :name, autofocus: true %>
+    </div>
+
+    <div>
+      <%= form.label :icon, "Icon link" %>
+      <%= form.text_field :icon %>
+    </div>
+
+    <%= form.submit "Save" %>
+
+  <% end %>
+<% end %>
