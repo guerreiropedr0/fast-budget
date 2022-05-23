@@ -1,0 +1,21 @@
+<%= turbo_frame_tag @operation do %>
+  <%= form_with model: @operation, data: { turbo: false } do |form| %>
+
+    <div>
+      <%= form.label :name %>
+      <%= form.text_field :name, autofocus: true %>
+    </div>
+
+    <div>
+      <%= form.label :amount %>
+      <%= form.number_field :amount %>
+    </div>
+
+    <div>
+      <%= select("group", "group_id", Group.all.collect { |g| [ g.name, g.id ] }, { prompt: 'Select Group' }, required: true, multiple: true) %>
+    </div>
+
+    <%= form.submit "Save" %>
+
+  <% end %>
+<% end %>
