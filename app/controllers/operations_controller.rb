@@ -1,7 +1,10 @@
 class OperationsController < ApplicationController
   load_and_authorize_resource
 
-  def index; end
+  def index
+    @group = Group.find_by(id: params[:group_id])
+    @operations = helpers.find_operations
+  end
 
   def new
     @operation = Operation.new
