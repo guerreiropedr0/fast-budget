@@ -16,7 +16,7 @@ class OperationsController < ApplicationController
     helpers.create_groups_operations(@operation, params[:group][:group_id])
 
     if @operation.save
-      redirect_to root_path, notice: 'Successfully created an operation.'
+      redirect_to groups_path, notice: 'Successfully created an operation.'
     else
       flash[:alert] = 'Failed to create an operation.'
       render :new

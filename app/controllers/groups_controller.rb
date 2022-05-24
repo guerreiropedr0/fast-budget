@@ -13,7 +13,7 @@ class GroupsController < ApplicationController
     @group = Group.new(group_params)
 
     if @group.save
-      redirect_to root_path, notice: 'Successfully created a group.'
+      redirect_to groups_path, notice: 'Successfully created a group.'
     else
       flash[:alert] = 'Failed to create a group.'
       render :new
