@@ -154,3 +154,23 @@ body {
 ::placeholder {
   font-size: 0.83rem;
 }
+
+.alert-container {
+  color: #664d03;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+  padding: 1rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.notice-container {
+  color: #055160;
+  background-color: #cff4fc;
+  border-color: #b6effb;
+  padding: 1rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  text-align: center;
+}
