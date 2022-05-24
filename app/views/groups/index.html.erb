@@ -2,6 +2,11 @@
   <h1>Groups</h1>
 </header>
 <section>
+  <% if @groups.empty? %>
+    <div class="information padding border">
+      <h3 class="text-center">No groups yet.</h3>
+    </div>
+  <% else %>
   <% @groups.each do |group| %>
     <div class="d-flex information border gap">
       <img src=<%= group.icon %> alt=<%= group.name %> class="icon">
@@ -15,6 +20,7 @@
         </small>
       </div>
     </div>
+  <% end %>
   <% end %>
   <div class="margin">
     <%= link_to "Add group", new_group_path, class: "btn" %>
