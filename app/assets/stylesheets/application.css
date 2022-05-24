@@ -18,7 +18,7 @@
   --secondary: #5fb523;
   --text: #434b54;
   --light-background: #f5f6f8;
-  --font: 'proxima-nova', 'sans-serif';
+  --font: "proxima-nova", "sans-serif";
 }
 
 *,
@@ -50,9 +50,27 @@ body {
 
 .primary-gradient-background {
   background: var(--primary);
-  background: -moz-linear-gradient(180deg, var(--primary) 0%, var(--primary) 70%, #295990 100%);
-  background: -webkit-linear-gradient(180deg, var(--primary) 0%, var(--primary) 70%, #295990 100%);
-  background: linear-gradient(180deg, var(--primary) 0%, var(--primary) 70%, #295990 100%);
+  background:
+    -moz-linear-gradient(
+      180deg,
+      var(--primary) 0%,
+      var(--primary) 70%,
+      #295990 100%
+    );
+  background:
+    -webkit-linear-gradient(
+      180deg,
+      var(--primary) 0%,
+      var(--primary) 70%,
+      #295990 100%
+    );
+  background:
+    linear-gradient(
+      180deg,
+      var(--primary) 0%,
+      var(--primary) 70%,
+      #295990 100%
+    );
 }
 
 .header {
@@ -121,11 +139,6 @@ body {
   flex: auto;
   border: none;
   outline: unset;
-}
-
-.form-group:nth-child(odd) {
-  border-top: 1px groove rgba(28, 110, 164, 0.11);
-  border-bottom: 1px groove rgba(28, 110, 164, 0.11);
 }
 
 .btn {
@@ -230,4 +243,19 @@ body {
   position: absolute;
   top: 0;
   left: 2%;
+}
+
+.checkbox {
+  flex-direction: row !important;
+}
+
+.check {
+  margin-right: 0.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  border-bottom: 1px groove rgba(28, 110, 164, 0.11);
 }
