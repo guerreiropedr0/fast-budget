@@ -1,3 +1,5 @@
 class HomeController < ApplicationController
-  def index; end
+  def index
+    redirect_to groups_path if current_user
+  end
 end

@@ -1,7 +1,10 @@
 class OperationsController < ApplicationController
   load_and_authorize_resource
 
-  def index; end
+  def index
+    @group = Group.find_by(id: params[:group_id])
+    @operations = helpers.find_operations
+  end
 
   def new
     @operation = Operation.new
@@ -13,7 +16,7 @@ class OperationsController < ApplicationController
     helpers.create_groups_operations(@operation, params[:group][:group_id])
 
     if @operation.save
-      redirect_to root_path, notice: 'Successfully created an operation.'
+      redirect_to groups_path, notice: 'Successfully created an operation.'
     else
       flash[:alert] = 'Failed to create an operation.'
       render :new
