@@ -252,3 +252,10 @@ body {
 .check {
   margin-right: 0.3rem;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  border-bottom: 1px groove rgba(28, 110, 164, 0.11);
+}
