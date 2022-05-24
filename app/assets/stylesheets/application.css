@@ -44,6 +44,10 @@ body {
   flex-direction: column;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .primary-gradient-background {
   background: var(--primary);
   background: -moz-linear-gradient(180deg, var(--primary) 0%, var(--primary) 70%, #295990 100%);
@@ -60,7 +64,7 @@ body {
 .information {
   margin: 1rem;
   padding: 0.5rem;
-  background-color: white;
+  background-color: #fff;
 }
 
 .border {
@@ -173,4 +177,25 @@ body {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   text-align: center;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-fill {
+  flex: auto;
+}
+
+.gap {
+  gap: 1rem;
 }
