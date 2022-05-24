@@ -7,7 +7,7 @@
       <img src=<%= group.icon %> alt=<%= group.name %> class="icon">
       <div class="container flex-fill justify-content-between">
         <div class="d-flex justify-content-between">
-          <h3><%= link_to group.name, operations_path(group_id: group.id) %></h3>
+          <h3><%= link_to group.name, group_operations_path(group_id: group.id) %></h3>
           <p>$<%= group_amount(group) %></p>
         </div>
         <small>
