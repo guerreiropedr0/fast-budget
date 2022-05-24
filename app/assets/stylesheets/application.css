@@ -94,23 +94,26 @@ body {
 
 .form {
   padding: 0 0.5rem 0 0.5rem;
-  background-color: white;
+  background-color: #fff;
 }
 
 .form-group {
   flex: auto;
+  background-color: #fff;
   display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
 }
 
 .form-control {
   flex: auto;
   border: none;
-  padding: 0.8rem;
   outline: unset;
 }
 
 .form-group:nth-child(odd) {
   border-top: 1px groove rgba(28, 110, 164, 0.11);
+  border-bottom: 1px groove rgba(28, 110, 164, 0.11);
 }
 
 .btn {
@@ -136,4 +139,18 @@ body {
 
 .align-self-start {
   align-self: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-label {
+  color: #757575;
+  font-size: 0.83rem;
+  margin-bottom: 0.3rem;
+}
+
+::placeholder {
+  font-size: 0.83rem;
 }

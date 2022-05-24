@@ -1,21 +1,22 @@
-<%= turbo_frame_tag @operation do %>
-  <%= form_with model: @operation, data: { turbo: false } do |form| %>
+<header class="header container primary-gradient-background">
+  <h1 class="text-center">Create Operation</h1>
+</header>
 
-    <div>
-      <%= form.label :name %>
-      <%= form.text_field :name, autofocus: true %>
-    </div>
+<%= form_with model: @operation, data: { turbo: false }, class: "container form margin-y border-y" do |form| %>
 
-    <div>
-      <%= form.label :amount %>
-      <%= form.number_field :amount %>
-    </div>
+  <div class="form-group">
+    <%= form.text_field :name, autofocus: true, placeholder: "Name", class: "form-control" %>
+  </div>
 
-    <div>
-      <%= select("group", "group_id", Group.all.collect { |g| [ g.name, g.id ] }, { prompt: 'Select Group' }, required: true, multiple: true) %>
-    </div>
+  <div class="form-group">
+    <%= form.number_field :amount, placeholder: "Amount", class: "form-control" %>
+  </div>
 
-    <%= form.submit "Save" %>
+  <div class="form-group">
+    <%= form.label :group, class: "form-label" %>
+    <%= select("group", "group_id", Group.all.collect { |g| [ g.name, g.id ] }, { include_blank: false }, required: true, multiple: true, size: 3, class: "form-control") %>
+  </div>
 
-  <% end %>
+  <%= form.submit "Save", class: "btn align-self-start margin-y" %>
+
 <% end %>
