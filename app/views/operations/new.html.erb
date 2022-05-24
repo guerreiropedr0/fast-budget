@@ -21,7 +21,7 @@
 
   <div class="form-group">
     <%= form.label :group, class: "form-label" %>
-    <%= select("group", "group_id", Group.all.collect { |g| [ g.name, g.id ] }, { include_blank: false }, required: true, multiple: true, size: 3, class: "form-control", required: true) %>
+    <%= select("group", "group_id", Group.all.collect { |g| [ g.name, g.id ] }, { include_blank: false }, multiple: true, size: 3, class: "form-control", required: true) %>
   </div>
 
   <%= form.submit "Save", class: "btn align-self-start margin-y" %>
