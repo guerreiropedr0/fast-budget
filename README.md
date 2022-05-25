@@ -6,9 +6,13 @@
 
 You have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-# Live Server
+## Live Server
 
 You can check out the website [here](https://fast-budget-rails.herokuapp.com/).
+
+## See introduction
+
+My video presentation is [here](https://drive.google.com/file/d/1tKnRMpSi57ySXKCSVkJMzuAH8M7Iws0k/view?usp=sharing)
 
 ## Built With
 
