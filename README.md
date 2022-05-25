@@ -6,6 +6,10 @@
 
 You have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
+# Live Server
+
+You can check out the website [here](https://fast-budget-rails.herokuapp.com/).
+
 ## Built With
 
 - RUBY
@@ -59,7 +63,7 @@ To run the server
 rails s
 ```
 
-Link to [localhost](http://localhost:3000/)
+Link to [localhost](http://localhost:3000/).
 
 ## Authors
 
@@ -74,6 +78,10 @@ Link to [localhost](http://localhost:3000/)
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
+
+## Acknowledgments
+
+Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=). Under the [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Show your support
 
