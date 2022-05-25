@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Recipes index page', type: :system do
+RSpec.describe 'Groups index page', type: :system do
   before :example do
     driven_by(:rack_test)
     @user = FactoryBot.create(:user, :confirmed)

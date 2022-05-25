@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Recipes new page', type: :system do
+RSpec.describe 'Groups new page', type: :system do
   before :example do
     driven_by(:rack_test)
     @user = FactoryBot.create(:user, :confirmed)
@@ -32,7 +32,7 @@ RSpec.describe 'Recipes new page', type: :system do
     expect(page).to have_content('Successfully created a group.')
   end
 
-  it 'should not create a recipe if one of the fields is empty' do
+  it 'should not create a group if one of the fields is empty' do
     click_button('Save')
 
     expect(page).to_not have_content('Successfully created a group.')
