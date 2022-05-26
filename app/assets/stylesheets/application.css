@@ -1,0 +1,261 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+:root {
+  --primary: #3778c2;
+  --secondary: #5fb523;
+  --text: #434b54;
+  --light-background: #f5f6f8;
+  --font: "proxima-nova", "sans-serif";
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  opacity: 1;
+  font-family: var(--font);
+}
+
+body {
+  color: var(--text);
+  background-color: var(--light-background);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.primary-gradient-background {
+  background: var(--primary);
+  background:
+    -moz-linear-gradient(
+      180deg,
+      var(--primary) 0%,
+      var(--primary) 70%,
+      #295990 100%
+    );
+  background:
+    -webkit-linear-gradient(
+      180deg,
+      var(--primary) 0%,
+      var(--primary) 70%,
+      #295990 100%
+    );
+  background:
+    linear-gradient(
+      180deg,
+      var(--primary) 0%,
+      var(--primary) 70%,
+      #295990 100%
+    );
+}
+
+.header {
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+.information {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+
+.border {
+  border: 1px groove rgba(28, 110, 164, 0.11);
+}
+
+.border-y {
+  border-top: 1px groove rgba(28, 110, 164, 0.11);
+  border-bottom: 1px groove rgba(28, 110, 164, 0.11);
+}
+
+.heading {
+  margin-bottom: 0.5rem;
+}
+
+.margin {
+  margin: 1.5rem 1rem 1rem 1rem;
+}
+
+.margin-y {
+  margin: 1rem 0 1rem 0;
+}
+
+.margin-x {
+  margin: 0 1rem 0 1rem;
+}
+
+.margin-b {
+  margin-bottom: 1rem;
+}
+
+.link {
+  color: var(--primary);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.form {
+  padding: 0 0.5rem 0 0.5rem;
+  background-color: #fff;
+}
+
+.form-group {
+  flex: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+}
+
+.form-control {
+  flex: auto;
+  border: none;
+  outline: unset;
+}
+
+.btn {
+  background: linear-gradient(to bottom, var(--secondary) 5%, #5cbf2a 100%);
+  background-color: var(--secondary);
+  border: 1px solid #18ab29;
+  cursor: pointer;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #2f6627;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #5cbf2a 5%, var(--secondary) 100%);
+  background-color: #5cbf2a;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.align-self-start {
+  align-self: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-label {
+  color: #757575;
+  font-size: 0.83rem;
+  margin-bottom: 0.3rem;
+}
+
+::placeholder {
+  font-size: 0.83rem;
+}
+
+.alert-container {
+  color: #664d03;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+  padding: 1rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.notice-container {
+  color: #055160;
+  background-color: #cff4fc;
+  border-color: #b6effb;
+  padding: 1rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-fill {
+  flex: auto;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.money-amount {
+  background-color: #fff;
+  padding: 1rem;
+  border-bottom: 1px groove rgba(28, 110, 164, 0.11);
+}
+
+.justify-content-evenly {
+  justify-content: space-between;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 2%;
+}
+
+.checkbox {
+  flex-direction: row !important;
+}
+
+.check {
+  margin-right: 0.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  border-bottom: 1px groove rgba(28, 110, 164, 0.11);
+}
